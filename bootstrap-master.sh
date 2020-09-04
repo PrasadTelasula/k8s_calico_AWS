@@ -2,7 +2,7 @@
 
 # Initialize Kubernetes
 echo "[TASK 1] Initialize Kubernetes Cluster"
-kubeadm init --kubernetes-version=1.15.3 --pod-network-cidr=192.168.0.0/16 >> /root/kubeinit.log 2>/dev/null
+kubeadm init --pod-network-cidr=192.168.0.0/16 >> /root/kubeinit.log 2>/dev/null
 
 # Copy Kube admin config
 echo "[TASK 2] Copy kube admin config to centos user .kube directory"
